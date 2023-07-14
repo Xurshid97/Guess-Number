@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    <style>
+        .intro {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0;
+        }
+        #parent {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            padding: 50px 100px;
+            border: 1px solid green;
+            margin: 0 auto;
+            width: 300px;
+            box-shadow: 2px 2px 5px black;
+        }
+        input {
+            width: 200px;
+            padding: 5px 10px;
+            display: block;
+            font-size: 24px;
+        }
+        button {
+            background-color: red;
+            color: white;
+            padding: 5px 40px;
+            font-size: 21px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 1px 1px 2px rgb(50, 50, 11);
+        }
+        button:hover {
+            background-color: rgb(88, 4, 4);
+        }
+    </style>
+</head>
+<body>
+    <div class="intro">
+        <h3>We thought secret number from 0 to 10</h3>
+        <h5>Can you find it, in less than 5 times?</h5>
+    </div>
+    <div id="parent">
+        <input type="number">
+        <button id="subm">Submit</button>
+    </div>
+
+    <script src="./home.js"></script>
+    
+</body>
+</html>
