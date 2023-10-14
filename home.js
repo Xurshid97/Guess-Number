@@ -23,6 +23,7 @@ btn.addEventListener('click', ()=> {
         }
         else if(checker === rand) {
             newEl.innerHTML = `Congratulations, secret number is ${checker}, you have found it in ${countTime} times`
+            location.reload();
         }
     }
     console.log(counter);
