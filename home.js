@@ -4,7 +4,7 @@ let rand = Math.floor(Math.random()*10)
 let newEl = document.createElement('div')
 let parentDiv = document.getElementById('parent')
 let counter = 5
-
+let countTime = 0
 
 btn.addEventListener('click', ()=> {
     let userInput = document.querySelector('input')
@@ -22,11 +22,12 @@ btn.addEventListener('click', ()=> {
             newEl.innerHTML = `Enter bigger number, you have entered ${checker}`
         }
         else if(checker === rand) {
-            newEl.innerHTML = `Congratulations, secret number is ${checker}, you have found it in ${counter} times`
+            newEl.innerHTML = `Congratulations, secret number is ${checker}, you have found it in ${countTime} times`
         }
     }
     console.log(counter);
     counter--
+    countTime++
     parentDiv.appendChild(newEl)
     userInput.value = ''
 })
